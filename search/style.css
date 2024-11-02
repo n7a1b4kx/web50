@@ -37,7 +37,10 @@ a:hover {
 .advance-item {
     margin-left: 10px;
 }
-
+#search-logo {
+    margin-right: 10px;
+    margin-left: 10px;
+}
 /*top right corner button alignment*/
 .navbar {
     list-style-type: none;
@@ -56,22 +59,23 @@ a:hover {
     box-shadow: none;
     border-radius: 24px;
     margin: 0 auto;
-    width: 638px;
     width: auto;
     max-width: 584px;
 }
 
 #input {
-    color: white;
+    border: none;
     font-family: Arial, sans-serif;
     line-height: 22px;
     background-color: transparent;
     padding-top: 11px;
     overflow-x: hidden;
-    width: 400px;
-    height: auto;
+    width: 500px;
 }
 
+#input:hover {
+    border-style: none;
+}
 #submit-button {
     display: flex;
     justify-content: center;
