@@ -14,13 +14,29 @@ a {
     text-decoration: none;
 }
 
-img {
+a:hover {
+    text-decoration: underline;
+}
+
+#search-image-logo,
+#advance-search-logo {
     height: auto;
-    width: 14px;
+    width: 16px;
     fill: white;
 }
 
-.google.logo {
-    height: auto;
-    width: auto;
+.image-item,
+.advance-item {
+    margin-left: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+* {
+    outline: 2px solid goldenrod;
 }
