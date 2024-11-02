@@ -25,6 +25,17 @@ a:hover {
     fill: white;
 }
 
+#google-logo {
+    height: 250px;
+    width: auto;
+    margin: ;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
 .image-item,
 .advance-item {
     margin-left: 10px;
