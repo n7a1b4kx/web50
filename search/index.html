@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form action="https://google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
+    <div class="header">
+        <div class="image"><a class="image search" href="./pages/image.html">Image Search</a></div>
+        <div class="advance"><a class="advance search" href="./pages/advance.html">Advance Search</a></div>
+    </div>
+    <div>
+        <img class="google logo" src="./images/google.png" alt="Google Logo">
+    </div>
+    <div class="query">
+        <form action="https://google.com/search">
+            <input type="text" name="q" placeholder="type anything">
+            <input type="submit" value="Google Search">
+        </form>
+    </div>
 </body>
 </html>
