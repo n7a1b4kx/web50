@@ -18,13 +18,36 @@ a:hover {
     text-decoration: underline;
 }
 
+.query-box {
+    display: flex;
+    z-index: 3;
+    position: relative;
+    min-height: 44px;
+    border: 1px solid transparent;
+    background: #4d5156;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    width: auto;
+    max-width: 584px;
+}
+
 #search-image-logo,
 #advance-search-logo {
     height: auto;
     width: 16px;
     fill: white;
 }
-
+#search-logo {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    padding-left: 14px;
+    height: 46px;
+    margin: auto;
+    fill: #ffffff80:
+}
 #google-logo {
     height: 250px;
     width: auto;
