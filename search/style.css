@@ -1,14 +1,25 @@
 body {
-    background-color: gainsboro;
+    background: #202124;
 }
 
-.header > div {
+.header div{
     display: inline;
-    align-items: right;
 }
 
 a {
-    color: black;
-    font-family: monospace, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
+    color: white;
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-size: 13px;
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    width: 14px;
+    fill: white;
+}
+
+.google.logo {
+    height: auto;
+    width: auto;
 }
