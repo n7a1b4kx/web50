@@ -2,11 +2,6 @@ body {
     background: #202124;
 }
 
-.header div{
-    display: inline;
-}
-
-
 a {
     color: white;
     font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
@@ -18,7 +13,40 @@ a:hover {
     text-decoration: underline;
 }
 
-.query-box {
+#search-image-logo,
+#advance-search-logo {
+    height: auto;
+    width: 16px;
+    fill: white;
+}
+
+#google-logo {
+    display: flex;
+    height: 250px;
+    width: auto;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+/*top right corner links spacing between button*/
+.image-item,
+.advance-item {
+    margin-left: 10px;
+}
+
+/*top right corner button alignment*/
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#query-box {
     display: flex;
     z-index: 3;
     position: relative;
@@ -33,44 +61,36 @@ a:hover {
     max-width: 584px;
 }
 
-#search-image-logo,
-#advance-search-logo {
+#input {
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 22px;
+    background-color: transparent;
+    padding-top: 11px;
+    overflow-x: hidden;
+    width: 400px;
     height: auto;
-    width: 16px;
-    fill: white;
-}
-#search-logo {
-    display: flex;
-    align-items: center;
-    padding-right: 13px;
-    padding-left: 14px;
-    height: 46px;
-    margin: auto;
-    fill: #ffffff80:
-}
-#google-logo {
-    height: 250px;
-    width: auto;
-    margin: ;
-}
-.logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
 }
 
-.image-item,
-.advance-item {
-    margin-left: 10px;
-}
-
-.navbar {
-    list-style-type: none;
+#submit-button {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-* {
-    outline: 2px solid goldenrod;
+.submit-button {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
