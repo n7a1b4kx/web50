@@ -32,16 +32,15 @@
     <div>
         <form action="https://google.com/search">
             <div>
-                <div class="query-box">
-                    <div>
+                <div>
+                    <span id="query-box">
                         <img id="search-logo" src="./images/magnifier.svg" alt="search icon">
-                    </div>
-                    <span>
-                        <input class="input" type="text" name="q" placeholder="type anything">
+                        <input id="input" type="text" name="q" placeholder="type anything">
                     </span>
                 </div>
-                <div>
-                    <input type="submit" value="Google Search">
+                <div id="submit-button">
+                    <input class="submit-button" type="submit" value="Google Search" aria-label="Google Search" name="btnI">
+                    <input class="submit-button" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit">
                 </div>
             </div>
         </form>
