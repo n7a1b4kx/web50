@@ -8,13 +8,29 @@
 </head>
 <body>
     <div class="header">
-        <div class="image"><a class="image search" href="./pages/image.html">Image Search</a></div>
-        <div class="advance"><a class="advance search" href="./pages/advance.html">Advance Search</a></div>
+        <div class="firstlink">
+            <div class="firstSvg">
+                <img class="image search" src="./images/imageSearch.svg" alt="image search logo">
+            </div>
+            <div class="ImagePage">
+                <a class="image search" href="./pages/image.html" rel="noreferer">Images</a>
+            </div>
+        </div>
+        <div class="secondlink">
+            <div>
+                <img class="advance search" src="./images/beaker.svg" alt="advcance search logo">
+            </div>
+            <div>
+                <a class="advance search" href="./pages/advance.html" rel="noreferer">Advance Search</a>
+            </div>
+        </div>
     </div>
     <div>
-        <img class="google logo" src="./images/google.png" alt="Google Logo">
+        <div>
+            <img class="google logo" src="./images/google.png" alt="Google Logo">
+        </div>
     </div>
-    <div class="query">
+    <div class="query-container">
         <form action="https://google.com/search">
             <input type="text" name="q" placeholder="type anything">
             <input type="submit" value="Google Search">
