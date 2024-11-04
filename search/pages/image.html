@@ -6,8 +6,7 @@
     <title>Image Search</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
+            outline: 2px solid greenyellow;
         }
         body {
             background-color: #202124;
@@ -16,6 +15,7 @@
             list-style: none;
         }
         ul li {
+            margin-left: 10px;
             display: inline;
         }
         a {
@@ -28,7 +28,7 @@
             text-decoration: underline;
         }
         a:active {
-            
+            color: green;
         }
         div {
             display: flex;
@@ -37,6 +37,29 @@
         .search-icon, .advance-icon {
             height: auto;
             width: 13px;
+        }
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            height: auto;
+            width: 570px;
+            margin-top: 10px;
+        }
+        #query-box {
+            display: flex;
+            z-index: 3;
+            position: relative;
+            min-height: 44px;
+            border: 1px solid transparent;
+            background-color: white;
+            box-shadow: none;
+            border-radius: 24px;
+            margin: 15px auto;
+            width: 300px;
+            max-width: 584px;
         }
     </style>
 </head>
@@ -55,5 +78,15 @@
             </ul>
         </div>
     </header>
+    <section>
+        <div class="logo-container">
+            <img src="../images/google-image.png" alt="Google Image Search Logo" id="google-image">
+        </div>
+        <div>
+            <div id="query-box">
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>
