@@ -68,10 +68,11 @@
             max-width: 584px;
         }
         .image-icon {
-            display: flex;
+            height: auto;
+            width: 23px;
             margin: 10px
         }
-        .text-area {
+        #text-area {
             background-color: transparent;
             outline: none;
             border: none;
@@ -80,6 +81,14 @@
             margin-bottom: 3px;
             color: white;
             font-size: 18px;
+        }
+        .submit-button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .submit-button-container .submit-button {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -109,10 +118,14 @@
                         <img src="../images/imageSearch.svg" class="image-icon" alt="Image Search logo">
                     </div>
                     <div>
-                        <form>
-                            <input type="text" class="text-area">
+                        <form action="https://google.com/search" class="query-form">
+                            <input id="text-area" type="text" name="q">
                         </form>
                     </div>
+                </div>
+                <div class="submit-button-container">
+                    <input class="submit-button" type="submit" value="Image Search" aria-label="Image Search">
+                    <input class="submit-button" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit">
                 </div>
             </div>
         </div>
