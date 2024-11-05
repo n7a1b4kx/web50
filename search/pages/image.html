@@ -27,24 +27,32 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
     
-        div {
+        .header-link {
             display: flex;
             justify-content: flex-end;
         }
+        
         .search-icon, .advance-icon {
             height: auto;
             width: 13px;
         }
+        
         .logo-container {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        img {
+        #google-image {
             height: auto;
-            width: 570px;
-            margin-top: 10px;
+            width: 400px;
+            margin-top: 30px;
+            margin-bottom: 10px;
         }
         #query-box {
             display: flex;
@@ -52,18 +60,32 @@
             position: relative;
             min-height: 44px;
             border: 1px solid transparent;
-            background-color: white;
+            background-color: grey;
             box-shadow: none;
             border-radius: 24px;
             margin: 15px auto;
-            width: 300px;
+            width: auto;
             max-width: 584px;
+        }
+        .image-icon {
+            display: flex;
+            margin: 10px
+        }
+        .text-area {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            line-height: 22px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            color: white;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div>
+        <div class="header-link">
             <ul>
                 <li>
                     <img src="../images/magnifier.svg" alt="Google Search Icon" class="search-icon">
@@ -77,12 +99,21 @@
         </div>
     </header>
     <section>
-        <div class="logo-container">
-            <img src="../images/google-image.png" alt="Google Image Search Logo" id="google-image">
-        </div>
-        <div>
-            <div id="query-box">
-
+        <div class="container">
+            <div class="logo-container">
+                <img src="../images/google-image.png" alt="Google Image Search Logo" id="google-image">
+            </div>
+            <div>
+                <div id="query-box">
+                    <div class="icon-container">
+                        <img src="../images/imageSearch.svg" class="image-icon" alt="Image Search logo">
+                    </div>
+                    <div>
+                        <form>
+                            <input type="text" class="text-area">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
