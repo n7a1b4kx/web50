@@ -1,13 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .main, .header, ul {
     display: flex;
 }
 
-.header, h2 {
+.logo, h2 {
     color: #f9fafb;
 }
 
 h2 {
+    font-weight: 900;
     font-size: 48px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .hero, .footer {
@@ -15,10 +26,9 @@ h2 {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.header {
+.header, .main {
     justify-content: space-around;
     align-items: center;
-    font-size: 24px;
 }
 
 .secondary-text, ul {
@@ -31,11 +41,12 @@ ul {
     list-style: none;
 }
 
-.text {
-    justify-content: left;
+.button {
+    background-color: #3882f6;
 }
 
-img {
-    height: 100px;
-    width: auto;
+.image-placeholder {
+    justify-content: center;
+    align-content: center;
+    background-color: pink;
 }
