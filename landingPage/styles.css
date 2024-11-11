@@ -1,4 +1,22 @@
-.header {
-    font-size: 24px;
+.header, ul {
+    display: flex;
+}
+
+.header, .hero, .footer {
+    background-color: #1f2937;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    justify-content: space-around;
+    align-items: center;
+    color: #f9fafb;
+    font-size: 24px;
+}
+
+ul {
+    font-size: 18px;
+    color: #e5e7eb;
+    gap: 8px;
+    list-style: none;
 }
